@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google Font Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <!-- Tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Assignment - 02</title>
 </head>
-<body>
+<body class="max-w-[1600px] mx-auto font-[Inter]">
     
-    <header>
+    <header class="">
         <!-- navbar section -->
+         <nav class="w-full flex justify-between py-4 px-4 lg:px-48 text-white bg-[#1A0B2E] ">
+            <img class="w-auto h-8" src="icons/TechWave.png" alt="techwave logo">
+            <ul class="hidden lg:flex items-center gap-8 text-[16px] font-medium">
+                <li><a href="">About</a></li>
+                <li><a href="">Episodes</a></li>
+                <li><a href="">Host</a></li>          
+            </ul>
+            <button class="hidden lg:block bg-[linear-gradient(47deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] text-white px-4 py-3 rounded-[10000px] font-semibold cursor-pointer transition duration-300 hover:scale-110 hover:-translate-y-1">
+                Subscribe
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <img class="lg:hidden w-4 h-3 my-auto" src="assets/hamburger-menu.png" alt="">
+         </nav>
     </header>
 
     <main>

@@ -70,29 +70,29 @@
             class="absolute top-[180px] left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 w-[65px] lg:top-[260px] lg:w-[120px]"
           />
 
-          <button
+          <span
             class="absolute top-[100px] left-1/2 translate-x-[60px] z-40 bg-[#00FF88] px-3 py-1 rounded-[1000px] text-center text-sm font-semibold uppercase lg:px-6 lg:py-2 lg:text-lg"
           >
             New
-          </button>
+          </span>
 
           <div class="text-white text-center">
             <h1 class="text-4xl lg:text-6xl font-extrabold lg:mb-2">
               TechWave
             </h1>
-            <p class="text-sm lg:text-base my-2 opacity-80">
+            <p class="text-sm lg:text-base my-3 opacity-80">
               Your daily dose of tech insights, productivity hacks, and personal
               growth
             </p>
-            <div class="flex gap-2 justify-center items-center">
+            <div class="flex gap-3 justify-center items-center">
               <button
-                class="flex justify-center items-center gap-1.5 bg-[linear-gradient(47deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] px-5 py-3 rounded-[10000px]"
+                class="flex justify-center items-center gap-1.5 bg-[linear-gradient(47deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] px-5 py-3 rounded-[10000px] cursor-pointer transition duration-300 hover:scale-110 hover:-translate-y-1"
               >
                 <img src="assets/spotify.png" alt="" />
                 Listen On Spotify
               </button>
               <button
-                class="flex items-center justify-center gap-1.5 text-[#00FF88] border border-[#00FF88] px-5 py-3 rounded-[10000px]"
+                class="flex items-center justify-center gap-1.5 text-[#00FF88] border border-[#00FF88] px-5 py-3 rounded-[10000px] cursor-pointer transition duration-300 hover:scale-110 hover:-translate-y-1"
               >
                 <img src="assets/message.png" alt="" />
                 Subscribe
@@ -411,12 +411,34 @@
             </div>
         </div>
       </section>
-
-      <!-- meet the host section -->
-      <section></section>
     </main>
 
     <!-- footer section -->
-    <footer></footer>
+    <footer>
+        <div class="bg-[url(./assets/footer-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden min-h-[250px] sm:min-h-[300px] lg:min-h-[400px]">
+            <div class="text-white p-8 sm:p-10 lg:p-28">
+                <h1 class="text-5xl lg:text-6xl font-black text-center mb-8">Tech<span class="bg-[linear-gradient(47deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] bg-clip-text text-transparent">Wave</span></h1>
+                <div class="grid grid-cols-2 place-items-center lg:flex lg:justify-center gap-4 lg:gap-9 max-w-md lg:max-w-none mx-auto mb-6">
+                    <div class="flex items-center justify-center gap-1.5">
+                        <img src="assets/spotify.png" alt="">
+                        <h3 class="text-sm lg:text-base font-normal opacity-60">Spotify</h3>
+                    </div>
+                    <div class="flex items-center justify-center gap-1.5">
+                        <img src="assets/apple-podcast.png" alt="">
+                        <h3 class="text-sm lg:text-base font-normal opacity-60">Apple Podcast</h3>
+                    </div>
+                    <div class="flex items-center justify-center gap-1.5">
+                        <img src="assets/youtube-podcast.png" alt="">
+                        <h3 class="text-sm lg:text-base font-normal opacity-60">Spotify</h3>
+                    </div>
+                    <div class="flex items-center justify-center gap-1.5">
+                        <img src="assets/twitter.png" alt="">
+                        <h3 class="text-sm lg:text-base font-normal opacity-60">Twitter</h3>
+                    </div>
+                </div>
+                <h3 class="text-base font-normal leading-6 text[#FAFAFA] opacity-60 text-center">&copy 2026 TechWave Podcast. All rights reserved.</h3>
+            </div>
+        </div>
+    </footer>
   </body>
 </html>
